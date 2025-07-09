@@ -5,7 +5,7 @@ const path = require('path');
 const Jimp = require('jimp');
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const DRAWINGS_DIR = path.join(__dirname, 'drawings');
 
 app.use(cors());
